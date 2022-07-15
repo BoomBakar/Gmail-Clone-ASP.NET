@@ -1,0 +1,24 @@
+﻿@model List<WebApplication4.Models.User>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="~/css/table.css" />
+</head>
+<body>
+    <table id="user">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+        @foreach (WebApplication4.Models.User u in Model)
+         {
+            <tr>
+                <td>@u.Name</td>
+                <td>@u.Email</td>
+                <td>@u.Password</td>
+            </tr>
+         }
+    </table>
+    <div id="msg">Click <a asp-action="SignIn">here</a> to return to log in page</div>
+</body>
+</html>

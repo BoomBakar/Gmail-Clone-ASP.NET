@@ -1,0 +1,37 @@
+﻿#user {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+    #user td, #user th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #user tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #user tr:hover {
+        background-color: #ddd;
+    }
+
+    #user th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04AA6D;
+        color: white;
+    }
+#msg {
+    width: 500px;
+    margin-top: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555557;
+    margin-left:800px;
+}

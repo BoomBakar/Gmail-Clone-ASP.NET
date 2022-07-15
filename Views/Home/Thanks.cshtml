@@ -1,0 +1,18 @@
+﻿@model WebApplication4.Models.User
+<html>
+<head>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h2>You enetered following data:-</h2>
+
+
+    <p>@Model.Name</p>
+    <p>@Model.Email</p>
+    <p>@Model.Password</p>
+    <br />
+    Click <a asp-action="SignIn">here</a> to go to log in page<br />
+    
+</body>
+</html>

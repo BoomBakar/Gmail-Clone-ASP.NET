@@ -1,0 +1,142 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@section InboxFiles{
+    <link type="text/css" rel="stylesheet" href="~/css/Inbox.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    @*<script src="~/js/site.js"></script>*@
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+}
+
+@section InboxHeader{
+    <div class="container">
+        <!--header-->
+        <div class="row" id="header">
+            <div class="col" id="header-left">
+                <span class="material-icons"> menu </span>
+                <img src="https://i.pinimg.com/originals/ae/47/fa/ae47fa9a8fd263aa364018517020552d.png"
+                     alt="" />
+            </div>
+            <div class="col" id="header-middle">
+                <span class="material-icons"> search </span>
+                <!--toSEARCH INPUT FLIED-->
+                <input type="text" placeholder="Search mail" />
+                <span class="material-icons"> arrow_drop_down </span>
+            </div>
+            <div class="col" id="header-right">
+                <span class="material-icons"> apps </span>
+                <span class="material-icons"> notifications </span>
+                <span class="material-icons"> account_circle </span>
+            </div>
+        </div>
+
+}
+<!--header ends-->
+<!--main body-->
+
+<div class="row" id="main-body">
+
+    <div class="col-sm-6 col-md-3">
+        <!-- Sidebar Starts -->
+        <div class="container">
+            <div class="row">
+                <div class="col" id="sidebar">
+                    <!--inbox-->
+                    <a asp-action="Compose">
+                        <button class="sidebar__compose">
+                            <span class="material-icons"> add </span>Compose
+                        </button>
+                    </a>
+                    <div class="col" id="sidebarOption" style="background-color: #f5dad9" ;>
+                        <span class="material-icons" href="#"> inbox </span>
+                        <a href="/Home/Inbox"><h3>Inbox</h3></a>
+                    </div>
+
+                    <div class="col" id="sidebarOption">
+                        <!--starred-->
+                        <span class="material-icons"> star </span>
+                        <h3>Starred</h3>
+                    </div>
+
+                    <div class="col" id="sidebarOption">
+                        <!--snozz-->
+                        <span class="material-icons"> access_time </span>
+                        <h3>Snoozed</h3>
+                    </div>
+
+
+                    <div class="col" id="sidebarOption">
+                        <!--sent-->
+
+                        <span class="material-icons"> near_me </span>
+                        <a href="/Home/Sent"><h3>Sent</h3></a>
+                    </div>
+
+                    <div class="col" id="sidebarOption">
+                        <span class="material-icons"> note </span>
+                        <h3>Drafts</h3>
+                    </div>
+
+                    <div class="col" id="sidebar__footer">
+                        <div class="col" id="sidebar__footerIcons">
+                            <span class="material-icons"> person </span>
+                            <span class="material-icons"> duo </span>
+                            <span class="material-icons"> phone </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--sidebar ends-->
+    </div> <!--sidebar col ends-->
+
+    <div class="col-sm-6 col-md-9">
+        <div class="row">
+            <div class="col" id="emailList">
+                <!-- Settings Starts -->
+                <div class="col" id="emailList__settings">
+                    <div class="col" id="emailList__settingsLeft">
+                        <input type="checkbox" />
+                        <span class="material-icons"> arrow_drop_down </span>
+                        <span class="material-icons"> redo </span>
+                        <span class="material-icons"> more_vert </span>
+                    </div>
+                    <div id="emailList__settingsRight">
+                        <span class="material-icons"> chevron_left </span>
+                        <span class="material-icons"> chevron_right </span>
+                        <span class="material-icons"> keyboard_hide </span>
+                        <span class="material-icons"> settings </span>
+                    </div>
+                </div>
+                <!-- Settings Ends -->
+            </div>
+        </div>
+        <div id="maildet">
+            <p class="h3">You Got a New Subscriber</p><br />
+            <h4 style="margin-bottom:-6px" ;>
+                Youtube
+                <small class="text-muted">&lt;youtube@gmail.com&gt;</small>
+            </h4>
+            <small class="text-muted">to me</small><br /><br />
+            <div id="mailbody">
+                <p>
+                    Congratulations, You just got a new Subscriber on your youtube channel.<br />Keep growing and contributing to the community.
+                    <br /><br />Regards,<br />Youtube Community
+                </p><br /><br /><br />
+
+                <button id="rep" type="button" class="button def"><span class="material-icons">reply</span>&nbsp;Reply</button>
+                
+                <br />
+                <div id="reply"></div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+</div>
+
